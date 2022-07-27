@@ -10,8 +10,6 @@ export const server = http.createServer((req, res) => {
 			res.setHeader('content-type', result.type);
 			res.setHeader('content-length', result.data.length);
 
-			console.log(result);
-
 			res.write(result.data);
 			res.end();
 		} catch (error) {
