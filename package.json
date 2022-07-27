@@ -1,0 +1,25 @@
+{
+	"name": "fast-svelte-serve",
+	"description": "Serves the contents of public/",
+	"version": "0.1.0-1",
+	"main": "lib/index.js",
+	"bin": {
+		"fast-svelte-serve": "lib/cli.js"
+	},
+	"author": "Prokop Schield",
+	"dependencies": {
+		"@prokopschield/argv": "^0.1.1",
+		"@prokopschield/mmap": "0.1.0-2",
+		"mime-types": "^2.1.35",
+		"ps-std": "^0.1.6"
+	},
+	"devDependencies": {
+		"@types/mime-types": "^2.1.1",
+		"@types/node": ">=16"
+	},
+	"license": "GPL-3.0-or-later",
+	"types": "./lib/index.d.ts",
+	"directories": {
+		"lib": "lib"
+	}
+}
