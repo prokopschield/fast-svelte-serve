@@ -19,6 +19,15 @@
 	},
 	"license": "GPL-3.0-or-later",
 	"types": "./lib/index.d.ts",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/prokopschield/fast-svelte-serve.git"
+	},
+	"keywords": [],
+	"bugs": {
+		"url": "https://github.com/prokopschield/fast-svelte-serve/issues"
+	},
+	"homepage": "https://github.com/prokopschield/fast-svelte-serve#readme",
 	"directories": {
 		"lib": "lib"
 	}
