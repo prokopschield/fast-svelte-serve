@@ -23,6 +23,8 @@ export interface ReadResult {
 
 export const cache = new Map<string, ReadResult>();
 
+const distdir = fs.existsSync('dist') ? 'dist' : 'public';
+
 export async function read(url: URL | string): Promise<ReadResult> {
 	const { pathname } = new URL(url, 'http://localhost');
 
@@ -35,7 +37,7 @@ export async function read(url: URL | string): Promise<ReadResult> {
 	const type = contentType(path.basename(pathname)) || 'text/plain';
 
 	const filePath = path.resolve(
-		'public',
+		distdir,
 		path.relative('/', path.resolve(pathname))
 	);
 
